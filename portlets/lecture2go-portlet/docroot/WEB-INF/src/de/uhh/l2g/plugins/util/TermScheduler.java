@@ -118,14 +118,14 @@ public final class TermScheduler extends PortletScheduler implements MessageList
 		boolean create = false;
 		// prepare for sose
 		if (month >= (sose-1) && month <= sose) {
-			String prefix = "SoSe";
+			String prefix = "Sommersemester";
 			term.setYear(yearString);
 			term.setPrefix(prefix);
 			create = true;
 		}
 		//prepare for wise
 		if (month >= (wise-1) && month <= wise) {
-			String prefix = "WiSe";
+			String prefix = "Wintersemester";
 			int nextYear = ++year;
 			String nextYearString = String.valueOf(nextYear).substring(2);
 			// System.out.println("this year is: " + yearString +
